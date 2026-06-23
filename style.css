@@ -119,10 +119,10 @@ ul{list-style:none}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .feat-card{background:var(--white);border-radius:var(--r-md);padding:28px 24px;border:1px solid var(--border);transition:transform var(--tr),box-shadow var(--tr)}
 .feat-card:hover{transform:translateY(-4px);box-shadow:var(--sh-md)}
-.feat-dark{background:var(--navy);border-color:var(--navy);color:var(--white)}
-.feat-dark h3{color:var(--yellow)}
-.feat-dark p{color:rgba(255,255,255,.75)}
-.feat-dark ul li{color:rgba(255,255,255,.65)}
+.feat-dark{background:var(--white);border-color:var(--border);color:var(--text)}
+.feat-dark h3{color:var(--navy)}
+.feat-dark p{color:var(--muted)}
+.feat-dark ul li{color:var(--muted)}
 .feat-dark ul li::before{color:var(--yellow)}
 .feat-premium{border-color:var(--yellow)}
 .feat-icon{font-size:1.9rem;margin-bottom:14px}
