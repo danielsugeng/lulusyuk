@@ -249,6 +249,22 @@ ul{list-style:none}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-block:22px}
 .foot-bottom p{color:rgba(255,255,255,.38);font-size:.8rem}
 
+/* ── REVIEWS ── */
+/* Bukti pembelian: kolom masonry, tinggi kotak mengikuti gambar asli (tidak dipotong) */
+.proof-grid{column-count:4;column-gap:18px}
+.proof-item{margin:0 0 18px;break-inside:avoid;-webkit-column-break-inside:avoid;background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--sh-sm);overflow:hidden}
+.proof-item img{display:block;width:100%;height:auto}
+/* Testimoni */
+.testi-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),440px));justify-content:center}
+.testi-card{position:relative;background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:40px 30px 28px;box-shadow:var(--sh-md)}
+.testi-card::before{content:"\201C";position:absolute;top:6px;left:24px;font-family:var(--serif);font-size:4.2rem;line-height:1;color:var(--yellow)}
+.testi-quote{font-family:var(--serif);font-size:1.08rem;line-height:1.75;color:var(--navy)}
+.testi-by{display:flex;flex-direction:column;margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+.testi-by b{color:var(--navy);font-size:.95rem}
+.testi-by span{color:var(--muted);font-size:.84rem}
+@media(max-width:1023px){.proof-grid{column-count:2}}
+@media(max-width:559px){.proof-grid{column-count:1}}
+
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
   .feat-grid{grid-template-columns:repeat(2,1fr)}
